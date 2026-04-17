@@ -8,7 +8,7 @@
 
 1\. Клонируйте репозиторий:
 
-&#x20;  ```bash
+&#x20;  ```CMD
 
 &#x20;  git clone \[https://github.com/zhoratolk/effective-mobile-devops.git](https://github.com/zhoratolk/effective-mobile-devops.git)
 
@@ -16,7 +16,7 @@
 
 2\. Запустите контейнеры:
 
-&#x20;   ```bash
+&#x20;   ```CMD
 
 &#x20;  docker-compose up -d --build
 
@@ -24,7 +24,7 @@
 
 \## Как проверить результат
 
-&#x20;  ```Bash
+&#x20;  ```CMD
 
 &#x20;  curl http://localhost
 
