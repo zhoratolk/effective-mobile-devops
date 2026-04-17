@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: em_backend
+    restart: always
+    networks:
+      - em_network
+
+  nginx:
+    image: nginx:alpine
+    container_name: em_nginx
+    volumes:
+      - ./nginx:/etc/nginx/:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - em_network
+
+networks:
+  em_network:
+    driver: bridge
